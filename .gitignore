@@ -19,7 +19,6 @@ version.py
 *.html
 *.png
 *.jpeg
-*.jpg
 *.gif
 *.pth
 *.zip

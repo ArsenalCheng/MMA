@@ -79,27 +79,18 @@ Used training and testing sets can be downloaded as follows:
 
   ```
   # MMA-x2, input=64x64, 8 GPUs
-
   torchrun --nproc_per_node=8 --master_port=4321 basicsr/train.py -opt options/train/MMA/train_MMA_x2_pretrain.yml --launcher pytorch
-
-  Then change the *pretrain_network_g* in options/train/MMA/train_MMA_x2_finetune.yml to the best ckp during pretraining.
- 
+  # Then change the *pretrain_network_g* in options/train/MMA/train_MMA_x2_finetune.yml to the best ckp during pretraining.
   torchrun --nproc_per_node=8 --master_port=4321 basicsr/train.py -opt options/train/MMA/train_MMA_x2_finetune.yml --launcher pytorch
 
   # MMA-x3, input=64x64, 8 GPUs
-
   torchrun --nproc_per_node=8 --master_port=4321 basicsr/train.py -opt options/train/MMA/train_MMA_x3_pretrain.yml --launcher pytorch
-
-  Then change the *pretrain_network_g* in options/train/MMA/train_MMA_x3_finetune.yml to the best ckp during pretraining.
- 
+  # Then change the *pretrain_network_g* in options/train/MMA/train_MMA_x3_finetune.yml to the best ckp during pretraining.
   torchrun --nproc_per_node=8 --master_port=4321 basicsr/train.py -opt options/train/MMA/train_MMA_x3_finetune.yml --launcher pytorch
 
   # MMA-x4, input=64x64, 8 GPUs
-
   torchrun --nproc_per_node=8 --master_port=4321 basicsr/train.py -opt options/train/MMA/train_MMA_x4_pretrain.yml --launcher pytorch
-
-  Then change the *pretrain_network_g* in options/train/MMA/train_MMA_x4_finetune.yml to the best ckp during pretraining.
- 
+  # Then change the *pretrain_network_g* in options/train/MMA/train_MMA_x4_finetune.yml to the best ckp during pretraining.
   torchrun --nproc_per_node=8 --master_port=4321 basicsr/train.py -opt options/train/MMA/train_MMA_x4_finetune.yml --launcher pytorch
   
   ```
