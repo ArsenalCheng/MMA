@@ -107,7 +107,7 @@ Used training and testing sets can be downloaded as follows:
 
 - Download testing (Set5, Set14, BSD100, Urban100, Manga109) datasets, place them in `datasets/`.
 
-- Run the following scripts. The testing configuration is in `options/test/` (e.g., [test_MMA_x2.yml](options/Test/test_MMA_x2.yml)).
+- Run the following scripts. The testing configuration is in `options/test/` (e.g., [test_MMA_x2.yml](options/test/test_MMA_x2.yml)).
 
   ```shell
   # MMA, reproduces results in Table 1 of the main paper
