@@ -68,7 +68,7 @@ Used training and testing sets can be downloaded as follows:
 | :-------- | :----: | :-------: | :------: | :-------: | :----: | 
 | MMA       | 2     | Urban100 |   34.13   | 0.9446 | [Google Drive](https://drive.google.com/drive/folders/1OW9fdzqrMh-j_OA6VC77ZMvKCnOtfiqq?usp=drive_link) |
 | MMA       | 3     | Urban100 |   29.93   | 0.8829 | [Google Drive](https://drive.google.com/drive/folders/1wF7kdCV_JdwKghzeS-zzUOPt3dMUSzqG?usp=drive_link)|
-| MMA       | 4     | Urban100 |   27.63   | 0.8274 | [Google Drive](https://drive.google.com/drive/folders/1HDULsB8jJKLNfrV0_Xs6Us4CMtH4T3_I?usp=drive_link)|
+| MMA       | 4     | Urban100 |   27.64   | 0.8272 | [Google Drive](https://drive.google.com/drive/folders/1HDULsB8jJKLNfrV0_Xs6Us4CMtH4T3_I?usp=drive_link)|
 
 
 ## Training
@@ -80,17 +80,17 @@ Used training and testing sets can be downloaded as follows:
   ```
   # MMA-x2, input=64x64, 8 GPUs
   torchrun --nproc_per_node=8 --master_port=4321 basicsr/train.py -opt options/train/MMA/train_MMA_x2_pretrain.yml --launcher pytorch
-  # Then change the *pretrain_network_g* in options/train/MMA/train_MMA_x2_finetune.yml to the best ckp during pretraining.
+  # Then change the "pretrain_network_g" in options/train/MMA/train_MMA_x2_finetune.yml to the best ckp during pretraining.
   torchrun --nproc_per_node=8 --master_port=4321 basicsr/train.py -opt options/train/MMA/train_MMA_x2_finetune.yml --launcher pytorch
 
   # MMA-x3, input=64x64, 8 GPUs
   torchrun --nproc_per_node=8 --master_port=4321 basicsr/train.py -opt options/train/MMA/train_MMA_x3_pretrain.yml --launcher pytorch
-  # Then change the *pretrain_network_g* in options/train/MMA/train_MMA_x3_finetune.yml to the best ckp during pretraining.
+  # Then change the "pretrain_network_g" in options/train/MMA/train_MMA_x3_finetune.yml to the best ckp during pretraining.
   torchrun --nproc_per_node=8 --master_port=4321 basicsr/train.py -opt options/train/MMA/train_MMA_x3_finetune.yml --launcher pytorch
 
   # MMA-x4, input=64x64, 8 GPUs
   torchrun --nproc_per_node=8 --master_port=4321 basicsr/train.py -opt options/train/MMA/train_MMA_x4_pretrain.yml --launcher pytorch
-  # Then change the *pretrain_network_g* in options/train/MMA/train_MMA_x4_finetune.yml to the best ckp during pretraining.
+  # Then change the "pretrain_network_g" in options/train/MMA/train_MMA_x4_finetune.yml to the best ckp during pretraining.
   torchrun --nproc_per_node=8 --master_port=4321 basicsr/train.py -opt options/train/MMA/train_MMA_x4_finetune.yml --launcher pytorch
   
   ```
